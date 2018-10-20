@@ -4,7 +4,8 @@ import os
 import signal
 import sys
 
-logging.basicConfig(format='[%(asctime)s] [%(levelname)8s] --- %(message)s', level=logging.CRITICAL)
+logging.basicConfig(format='[%(asctime)s] [%(levelname)8s] --- %(message)s', level=logging.INFO,
+                    filename='/tmp/client_desktop.log')
 
 
 def sigint_handler(signum, frame):
